@@ -39,8 +39,7 @@ function index() {
             }
 
             displayUsers(users);
-            var images = document.querySelectorAll('img');
-            displayImages(images);
+            displayImages();
         })
 
         let card = document.createElement('div')
@@ -72,10 +71,11 @@ function index() {
         }
         displayUsers(users);
 
-        var buttons = document.getElementsByClassName('info');
-        var images = document.querySelectorAll('img');
+        
+        
 
-        function displayImages(images) {
+        function displayImages() {
+            var images = document.querySelectorAll('img');
             Array.prototype.forEach.call(images, function (image) {
                 getUsersPhotos(image.id).then(data => {
                     return image.src = data.thumbnailUrl
@@ -83,7 +83,7 @@ function index() {
             })
         }
 
-        displayImages(images);
+        displayImages();
       
     })
 }
