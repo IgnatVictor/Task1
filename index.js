@@ -84,13 +84,7 @@ function index() {
         }
 
         displayImages(images);
-
-        Array.prototype.forEach.call(buttons, function (button) {
-            button.addEventListener("click", () => {
-
-                window.location = "./user/user.html" + "?" + 'userId' + "=" + button.dataset.id;
-            })
-        })
+      
     })
 }
 
