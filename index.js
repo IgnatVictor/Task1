@@ -1,4 +1,4 @@
-function index() {
+
 
     userApi = 'https://jsonplaceholder.typicode.com/users/'
     photosApi = "https://jsonplaceholder.typicode.com/photos/"
@@ -71,9 +71,6 @@ function index() {
         }
         displayUsers(users);
 
-        
-        
-
         function displayImages() {
             var images = document.querySelectorAll('img');
             Array.prototype.forEach.call(images, function (image) {
@@ -86,7 +83,6 @@ function index() {
         displayImages();
       
     })
-}
 
 
-index();
+
