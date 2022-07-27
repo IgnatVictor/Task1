@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.sort {
+    text-align: center;
+}
+
+option {
+    border-radius: 5px;
+    color: white;
+}
+
+select {
+    border-radius: 5px;
+    color: white;
+    background-color: #EF8D9C;
+    border-color: #EF8D9C;
+}
+
+html {
+    background-color: #ecf9ff;
+}
+
+body {
+    color: #272727;
+    font-family: 'Quicksand', serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 1rem;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 2px solid #ecf9ff;
+    border-radius: 5px;
+    height: 150px;
+    width: 150px;
+
+
+}
+
+.btn {
+    text-align: center;
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+    margin-top: 20px;
+    display: grid;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+@media (min-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    background-color: #EF8D9C;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.card_content {
+    max-width: 350px;
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+}
+
+.card_title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+
+.card_text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
